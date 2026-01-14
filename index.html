@@ -6,6 +6,185 @@
     <title>Kababjees Bot</title>
 </head>
 <body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KababJees AI Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #7f1d1d, #020617);
+      color: #ffffff;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 30px;
+    }
+
+    .hero-container {
+      max-width: 1300px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #dc2626, #b91c1c);
+      padding: 8px 22px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 30px rgba(220,38,38,.6);
+    }
+
+    h1 {
+      font-size: 54px;
+      line-height: 1.1;
+      margin-bottom: 25px;
+      text-shadow: 0 10px 30px rgba(0,0,0,.6);
+    }
+
+    .highlight {
+      color: #fca5a5;
+    }
+
+    p {
+      font-size: 18px;
+      color: #fecaca;
+      max-width: 540px;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 40px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: .3s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ef4444, #b91c1c);
+      color: white;
+      box-shadow: 0 20px 40px rgba(239,68,68,.6);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 25px 55px rgba(239,68,68,.8);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fecaca;
+      border: 2px solid rgba(239,68,68,.6);
+    }
+
+    .btn-outline:hover {
+      background: rgba(239,68,68,.15);
+    }
+
+    .image-box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-box::before {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, #ef4444, transparent 70%);
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 460px;
+      border-radius: 30px;
+      position: relative;
+      z-index: 1;
+      border: 3px solid rgba(239,68,68,.4);
+      box-shadow: 0 40px 80px rgba(0,0,0,.7);
+    }
+
+    @media (max-width: 900px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      p {
+        margin: auto auto 35px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-container">
+
+      <div>
+        <span class="badge">🔥 KababJees AI Assistant</span>
+        <h1>
+          Taste the Fire of <br>
+          <span class="highlight">KababJees</span> with Smart Ordering
+        </h1>
+        <p>
+          Chat with our AI Bot to browse the menu, place orders,
+          track deliveries, and locate the nearest KababJees branch
+          — fast, simple, and delicious.
+        </p>
+
+        <div class="actions">
+          <button class="btn btn-primary">🍢 Start Ordering</button>
+          <button class="btn btn-outline">💬 Chat with Bot</button>
+        </div>
+      </div>
+
+      <div class="image-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Uy_Ew1SoBtySf21-DUg6AeN6MncXHeImiA&s" alt="KababJees Food">
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+
 <script type="text/javascript">
     (function(d, m){
         var kommunicateSettings = 
@@ -18,5 +197,6 @@
 /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
 </script>
 </body>
-
 </html>
+
+
